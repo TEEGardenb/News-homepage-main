@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        font-weight: 700;
+        color: hsl(240, 100%, 5%);
+        text-decoration: none;
+      }
+    </style>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo.svg" alt="logo" class="custom-icon"
+          /></a>
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Sidebar -->
+          <div
+            class="sidebar offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- -->
+
+            <!-- Sidebar header-->
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close shadow-none ms-auto custom-btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- -->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Popular</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Categories</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container" id="container-new">
+        <div class="row">
+          <div class="col-12 col-md-8 mb-5 mb-md-0">
+            <img
+              src="assets/images/image-web-3-mobile.jpg"
+              alt="image-web-3"
+              width="100%"
+              id="Responsive-Image"
+            />
+            <div class="row">
+              <div class="col-10 col-md-5 col-lg-6 pe-lg-5">
+                <h1 class="mt-4">The Bright Future of Web 3.0?</h1>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-evenly col-12 col-md-7 col-lg-6"
+              >
+                <p class="mb-4 pt-md-3 pt-lg-4 pe-xl-5">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button type="button" class="py-3 px-4" id="Read_button">
+                  READ MORE
+                </button>
+              </div>
+            </div>
+          </div>
+          <section
+            class="d-flex flex-column justify-content-evenly col-11 col-md-4 py-3 px-4"
+            id="New"
+          >
+            <h2 id="title_new">New</h2>
+            <article>
+              <h3 id="title_section_new">Hydrogen VS Electric Cars</h3>
+              <p id="section_new-p">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+            <hr />
+            <article>
+              <h3 id="title_section_new">The Downsides of AI Artistry</h3>
+              <p id="section_new-p">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+            <hr />
+            <article>
+              <h3 id="title_section_new">Is VC Funding Drying Up?</h3>
+              <p id="section_new-p">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </section>
+        </div>
+      </div>
+
+      <div class="container">
+        <section class="row justify-content-between my-5" id="News">
+          <h2 id="news_title_hidden">news</h2>
+          <article
+            class="d-flex col-12 mb-4 mb-md-4 mb-lg-0 col-md-6 col-lg-4"
+            id="articles-news"
+          >
+            <img
+              src="assets/images/image-retro-pcs.jpg"
+              alt="retro-pcs"
+              id="img_sizes"
+            />
+            <div
+              class="d-flex flex-column justify-content-evenly ps-4"
+              id="div"
+            >
+              <h2 id="number_colors">01</h2>
+              <h3 class="title_section_news" id="title_size">
+                Reviving Retro PCs
+              </h3>
+              <p class="m-0 pe-lg-5">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </article>
+          <article
+            class="d-flex mb-4 mb-md-0 col-12 col-md-6 col-lg-4"
+            id="articles-news"
+          >
+            <img
+              src="assets/images/image-top-laptops.jpg"
+              alt="laptops"
+              id="img_sizes"
+            />
+            <div class="d-flex flex-column justify-content-evenly ps-4">
+              <h2 id="number_colors">02</h2>
+              <h3 id="title_size">Top 10 Laptops of 2022</h3>
+              <p class="pe-4 pe-md-5">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex col-12 col-md-6 col-lg-4" id="articles-news">
+            <img
+              src="assets/images/image-gaming-growth.jpg"
+              alt="gaming-growth"
+              id="img_sizes"
+            />
+            <div class="d-flex flex-column justify-content-evenly ps-4">
+              <h2 id="number_colors">03</h2>
+              <h3 id="title_size">The Growth of Gaming</h3>
+              <p class="pe-4 pe-lg-5">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mateo Parra Ledesma</a>.
+    </div>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- -->
+  </body>
+</html>
